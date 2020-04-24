@@ -164,6 +164,7 @@ VLD = 0;
 
 % Read image
 I = imread(handles.FullPath);
+I = rgb2gray(I);
 OriginalImage = I;
 ID=double(I(:,:,1));
 
